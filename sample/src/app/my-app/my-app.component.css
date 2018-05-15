@@ -1,0 +1,32 @@
+.m1{
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+.m2{
+    width: 100%;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .example-container {
+    border: 1px solid #00000080;  
+    height:100%;
+    width:100%;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: start;
+    justify-content: start;
+    background-color:rgb(0, 37, 139)
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+    background-color:rgb(0, 37, 139)
+  }
+  

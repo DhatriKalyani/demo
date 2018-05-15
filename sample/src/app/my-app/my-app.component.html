@@ -1,0 +1,77 @@
+
+<mat-drawer-container class="example-container" >
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-list role="list">
+            <a routerLink="/login" routerLinkActive="active">login</a>
+            <a routerLink="/register" routerLinkActive="active">Register</a>
+        </mat-list>
+      
+      </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-button  (click)="drawer.toggle()" >
+          <mat-icon>list</mat-icon>
+          <mat-icon>thumbs-up</mat-icon>
+      </button>
+      
+    </div>
+
+<form class="m1">
+  <table>
+    <tr>
+      <td>
+           <mat-form-field class="m2">
+              <input  matInput placeholder="First Name" id="firstname" [(ngModel)]="address.firstname" name="firstname"> 
+           </mat-form-field> 
+      </td>
+      </tr>
+      <tr>
+      <td>
+          <mat-form-field class="m2">
+              <input  matInput placeholder="Last Name" id="lastname" [(ngModel)]="address.lastname" name="lastname"> 
+          </mat-form-field> 
+      </td>
+      </tr>
+    
+  <tr>
+    <td>
+        <mat-form-field class="m1">
+            <textarea matInput placeholder="Address" id="address" [(ngModel)]="address.address" name="address">
+              </textarea>
+        </mat-form-field>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <mat-form-field class="m1">
+            <textarea matInput placeholder="Address" id="address" [(ngModel)]="address.address" name="address">
+              </textarea>
+        </mat-form-field>
+    </td>
+  </tr>
+      <tr>
+        <td>
+            <mat-form-field class="m2">
+                <input  matInput placeholder="City" id="city" [(ngModel)]="address.city" name="city"> 
+            </mat-form-field> 
+        </td>
+        <td>
+            <mat-form-field class="m2">
+                <input  matInput placeholder="State" id="state" [(ngModel)]="address.state" name="state"> 
+            </mat-form-field> 
+        </td>
+        <td>
+            <mat-form-field class="m2">
+                <input  matInput maxlength="5" placeholder="Postal code" id="postalcode" [(ngModel)]="address.postalcode" name="postalcode"> 
+            </mat-form-field> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button class="button" mat-raised-button color="primary" (click)="onSubmit()">submit</button>
+        </td>
+      </tr>
+     </table>
+  
+    </form>
+</mat-drawer-container >
